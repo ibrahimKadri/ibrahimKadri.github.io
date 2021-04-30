@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+body{
+margin: 0;
+font-family: 'Tajawal', sans-serif;
+}
+/*******************HEADER****************************************************/
+header{
+    background-image: url(../images/bg-2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: auto;
+}
+header .overlay{
+    background-color: rgb(225, 0, 0, 0.5);
+}
+header .container .row .item-text{
+    color: white;
+}
+/*********BUTTON************/
+header .container .row .item-text button{
+    font-size: 20;
+    height: 50px;
+    outline: none;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 6px;
+    direction: rtl;
+    margin: 3px;
+    width: 250px;
+}
+header .container .row .item-text button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    transition: 1s ease;
+}
+header .container .row .item-text button:nth-child(odd):hover{
+    color: green;
+    background-color: white;
+    border: 1px solid green;
+    transition: 1s ease;
+}
+/*******************FEATURES****************************************************/
+.feature .container .row .item-r .content{
+    display: flex;
+    flex-direction: column;
+}
+.feature .container .row h3{
+  color: red;
+}
+.feature h1.heading,
+.feature .container .row{
+    margin-top: 40px;
+}
+/*******************SPEACIALS****************************************************/
+.special{
+    background-color: grey;
+    margin-top: 40px;
+}
+.special .container .item .content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+/*******************SLIDESHOw****************************************************/
+.slideshow{
+  height: 400px;
+  max-width: 100%;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    width: 500px;
+    margin-top: 10px;
+  }
+  .slideshow h1{
+    margin-top: 40px;
+  }
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+  }
+  .prev{
+  left:0;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: white;
+    color: red;
+    text-decoration: none;
+  }
+ /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border:1px solid red;
+  }
+  
+.active, 
+.dot:hover {
+    background-color: red;
+  }
+  
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+/*******************FAQ****************************************************/
+.faq{
+    background-image: url(../images/bg-1.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: auto;
+}
+.overlay{
+    background-color: rgba(255,0,0,0.7);
+}
+.accordion {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid white;
+    text-align: right;
+    font-size: 15px;
+    transition: 4s;
+    margin-top:10px;
+    
+  }
+  .faq h1{
+    color: white;
+  }
+  .activee, .accordion:hover {
+    background-color: white; 
+    outline: none;
+    color: red;
+    border-bottom: 1px solid red;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    text-align: right;
+  }
+  /***************************FOOTER************/
+  footer,.copy{
+    background-color: #232323;
+    color: #e0dbdb; 
+  }
+  footer .container .row hr{
+      background-color: #ef473a;
+  }
+  footer .container ol{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  footer .container ol li{
+      margin-right: 20px;
+      list-style: none;
+      border-radius: 50%;
+      border: 1px solid #ef473a;
+      padding: 10px;
+      color: #ef473a;
+      height: 50px;
+      width: 50px ;
+      text-align: center;
+  }
+  footer .container ol li:hover{
+  background-color: #ef473a;
+  color: white;
+  transition: 1s ease;
+}
+footer .container button{
+    background-color: #ef473a;
+    color: white;
+    outline: none;
+    margin-top: 10px;
+    border: 1px solid #ef473a;
+    padding: 10px;
+}
+footer .container input{
+    width: 250px;
+    direction: rtl;
+    outline: none;
+    background-color: #2c2b2b;
+    color: white;
+}
+footer .container p{
+    display: flex; flex-direction: row-reverse;
+}
+footer .container p i{
+    color:#ef473a ;
+}
+footer .item{
+  margin-top: 10px;
+}
+.copy{
+    border-top: 1px solid white;
+}
