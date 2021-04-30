@@ -12,4 +12,4 @@ Landing Pages:
 		
 4. profile page demo: https://ibrahimkadri.github.io/Landing_Pages/profile/indexx.html
 
-5.company demo:      ibrahimKadri.github.io/Landing_Pages/Company/index.html
+5.company demo:      https://ibrahimkadri.github.io/Landing_Pages/Company/index.html
