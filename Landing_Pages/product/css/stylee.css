@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+body{
+font-family: 'Amiri', serif;
+}
+header video{
+position: fixed;
+min-height: 100%;
+min-width: 100%;
+z-index: -1;
+}
+header .container{
+margin-top: 15%;
+}
+header .container .row .item-l{
+width: 400px;
+margin-bottom: 10px;
+}
+header .container .row .item-r p{
+color: #5d5d5d;
+font-size: 18px;
+line-height: 32px;
+}
+header button{
+padding: 10px;
+font-size: 20px;
+color: white;
+outline: none;
+max-width: 100%;
+}
+header button:nth-child(even){
+background-color: rebeccapurple;
+color: white;
+border: 1px solid rebeccapurple;
+}
+header button:nth-child(odd){
+background-color:transparent;
+color: rebeccapurple;
+border: 1px solid rebeccapurple;
+margin-right: 10px;
+outline: none;
+width: 147px;
+margin-right: 3px;
+margin-bottom: 10px;
+}
+header button:hover{
+background-color: white;
+color: rebeccapurple;
+transition: 2s ease;
+}
+header .img-product{
+position: relative;
+}
+header .img-product .label{
+position: absolute;
+top: 0px;
+right: 0px; 
+width: 100px;
+max-width: 100%;
+}
+header .img-product p{
+color: #ffffff;
+font-size: 14px;
+text-align: center;
+position: absolute;
+top: 15px;
+right:30px; 
+}
+/******************FEATURES**********************/
+.features{
+background-color: white;
+margin-top: 20px;
+padding-bottom: 15px;
+}
+.features h2.heading{
+position: relative;
+}
+.features h2.heading:after{
+position: absolute;
+content: '';
+background-color: rebeccapurple;
+height: 2px;
+top: 0;
+left: 50%;
+width: 150px;
+transform: translateX(-50%);
+margin-top:50px;
+}
+.features .container{
+margin-top: 50px;
+}
+.features .container h2{
+border-right: 3px solid rebeccapurple;
+padding: 5px;
+}
+.features .container .item-box{
+border-bottom: 3px solid #eeeeee; 
+padding: 8px;
+}
+.features .container p{
+font-size: 18px;
+line-height: 32px;
+color: #555555;
+}
+/*******************PRICES*******************/
+.prices{
+background-color: #f7f7f7;
+padding-top: 50px;
+padding-bottom: 50px;
+min-height: 100%;
+}
+.prices .container .price{
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+}
+.prices .container .item{
+background-color: white; 
+border: 2px solid #ededed;
+color: #555555;
+font-weight: 700; 
+padding-bottom: 10px;
+padding-top: 20px;
+border-radius: 30px;
+margin-top: 20px;
+}
+.prices .container button{
+outline: none;
+background: none;
+border: 1px solid rebeccapurple;
+padding: 8px;
+color: rebeccapurple;
+}
+.prices .container button:nth-child(3){
+background-color: rebeccapurple;
+color: white;
+}
+.prices .container .third-price{
+    background-color: blueviolet;
+    color: white;
+}
+.prices .container .third-price button{
+    color: white;
+    border: 1px solid white;
+}
+.prices .third-price button:hover{
+    background-color: white;
+    color: rebeccapurple;
+    transition: 1s;
+}
+.prices button:not(.third-price button):hover{
+    background-color: rebeccapurple;
+    color: white;
+    transition: 1s;
+}
+.prices .container .price{
+    font-size: 24px;
+    direction: ltr;
+}
+.prices .container .row .price span{
+    font-size: 10px;
+}
+/******************FAQ**********************/
+.faq{
+background-color: white;
+padding-bottom: 10px;
+}
+.accordion {
+background-color: transparent;
+color: rebeccapurple;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: 1px solid rebeccapurple;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 4s;
+margin-top:10px;
+
+}
+
+.active, .accordion:hover {
+background-color: rebeccapurple; 
+outline: none;
+color: white;
+border: 1px solid rebeccapurple;
+}
+
+.panel {
+padding: 0 18px;
+display: none;
+background-color: rgba(106, 49, 163,0.5);
+overflow: hidden;
+color: white;
+}
+/*********************VIDEO*********************************/
+/* ضبط مكان وحجم الفيديو داخل الصفحة */
+section.video {
+min-height: 100vh;
+position: relative;
+overflow: hidden;
+}
+section.video video {
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+}
+/* تطبيق التنسيقات الخاصة بالطبقة التي تغطي الفيديو */
+section.video .overlay {
+background-color: rgba(106, 48, 147, 0.7);
+height: 100%;
+z-index: 1;
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+/* التنسيقات الخاصة بزر تشغيل الفيديو */
+section.video button {
+outline: none;
+position: absolute;
+top: 50%;
+right: 50%;
+font-size: 30px;
+color: #ffffff;
+background-color: transparent;
+border: none;
+}
+/* ضبط مكان شعار الفيديو وجعل الزر على شكل دائرة */
+section.video button i {
+width: 90px;
+height: 90px;
+margin: 0 auto;
+border: 2px solid #ffffff;
+border-radius: 50%;
+margin-bottom: 50px;
+line-height: 90px;
+left: 50%;
+transform: translateX(50%);
+}
+/**********************************FOOTER************************/
+footer{
+background-color: #131313;
+padding-top: 10px;
+color: #758594;
+}
+footer input{
+width: 250px;
+outline: none;
+}
+footer input,footer textarea{
+font-size: 20px;
+direction: rtl;
+margin-top: 10px;
+border-radius: 10px;
+background-color: #242422;
+outline: none;
+color: #758594;
+max-width: 100%;
+}
+footer button{
+direction: rtl;
+outline: none;
+background-color: rebeccapurple;
+color: white;
+padding: 10px;
+font-size: 18px;
+}
+/**********************************COPY*************************/
+.copy{
+background-color: #1d1d1d;
+color:rgb(83, 81, 81);
+padding-top: 10px;
+}
+.copy ol{
+display: flex;
+justify-content: flex-end;
+}
+.copy ol li{
+list-style: none;
+margin-right: 5px;
+line-height: 50px;
+height: 50px;
+text-align: center;
+width: 50px;
+border-radius: 50%;
+background-color: gray;
+color: white;
+cursor:pointer;
+}
+.copy ol li:hover{
+    background-color: white;
+    color: gray;
+    transition: 1s;
+}
